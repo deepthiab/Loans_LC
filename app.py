@@ -7,7 +7,7 @@ import os
 import xgboost as xgb
 import logging
 
-# Configure the logger
+# Configure the loggerda
 logging.basicConfig(
     filename='flask_app.log',
     level=logging.DEBUG,
@@ -27,6 +27,8 @@ def make_predictions():
     logger.info('Data route accessed with method %s', request.method)
     # load the form data from the incoming request
     user_input = request.args
+    logger.info ('Received inputs as %s' , user_input)
+    
     c_policy = np.array(bool(user_input['credit.policy']))
     int_rate = np.array(float(user_input['int.rate']))
     installment = np.array(float(user_input['installment']))
@@ -59,8 +61,11 @@ def make_predictions():
                        )
     data = np.hstack((c_policy, int_rate , installment , log_annual_inc , dti , fico , cr_line , r_bal , r_util , inq , delinq , pub_rec , purpose),dtype=object)
     
+    logger.info('Inputs reformatted as %s' , data)
+    
     data = data.reshape(1,-1)
-    print(data.shape)
+    logger.info('Shape of reformamtted data is %s' , data.shape)
+
     cwd = os.getcwd()
     file_path = os.path.join(cwd,'xgb_gs_model.p')
     xg_filepath = os.path.join(cwd,'best_xgbgs.json')

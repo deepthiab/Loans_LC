@@ -54,3 +54,37 @@
 2024-05-23 17:51:26,342 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:51:26] "GET / HTTP/1.1" 200 -
 2024-05-23 17:51:58,368 - __main__ - INFO - Data route accessed with method GET
 2024-05-23 17:51:58,436 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:51:58] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=650&days.with.cr.line=567899&revol.bal=5681&revol.util=15&inq.last.6mths=2&delinq.2yrs=0&pub.rec=0&purpose=small_business HTTP/1.1" 200 -
+2024-05-26 12:50:39,303 - __main__ - INFO - Starting Flask app
+2024-05-26 12:50:39,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-26 12:50:39,318 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-26 12:50:39,319 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 12:50:40,549 - __main__ - INFO - Starting Flask app
+2024-05-26 12:50:40,553 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 12:50:40,564 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 12:51:37,811 - __main__ - INFO - Input form rendered
+2024-05-26 12:51:37,820 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 12:51:37] "GET / HTTP/1.1" 200 -
+2024-05-26 12:52:11,165 - __main__ - INFO - Data route accessed with method GET
+2024-05-26 12:52:11,166 - __main__ - INFO - Received inputs as ImmutableMultiDict([('credit.policy', 'True'), ('int.rate', '0.1234'), ('installment', '100.25'), ('annual.inc', '100'), ('dti', '14.29'), ('fico', '650'), ('days.with.cr.line', '45676'), ('revol.bal', '5678'), ('revol.util', '45'), ('inq.last.6mths', '1'), ('delinq.2yrs', '0'), ('pub.rec', '0'), ('purpose', 'major_purchase')])
+2024-05-26 12:52:11,245 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 12:52:11] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=650&days.with.cr.line=45676&revol.bal=5678&revol.util=45&inq.last.6mths=1&delinq.2yrs=0&pub.rec=0&purpose=major_purchase HTTP/1.1" 200 -
+2024-05-26 12:57:13,227 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-26 12:57:13,540 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 12:57:15,395 - __main__ - INFO - Starting Flask app
+2024-05-26 12:57:15,400 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 12:57:15,408 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 12:57:27,897 - __main__ - INFO - Starting Flask app
+2024-05-26 12:57:27,907 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-26 12:57:27,907 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-26 12:57:27,908 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 12:57:29,121 - __main__ - INFO - Starting Flask app
+2024-05-26 12:57:29,125 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 12:57:29,133 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 12:57:35,016 - __main__ - INFO - Input form rendered
+2024-05-26 12:57:35,033 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 12:57:35] "GET / HTTP/1.1" 200 -
+2024-05-26 12:58:03,473 - __main__ - INFO - Data route accessed with method GET
+2024-05-26 12:58:03,474 - __main__ - INFO - Received inputs as ImmutableMultiDict([('credit.policy', 'True'), ('int.rate', '0.1234'), ('installment', '100.25'), ('annual.inc', '100'), ('dti', '14.29'), ('fico', '700'), ('days.with.cr.line', '35654'), ('revol.bal', '5677'), ('revol.util', '34'), ('inq.last.6mths', '0'), ('delinq.2yrs', '0'), ('pub.rec', '1'), ('purpose', 'all_other')])
+2024-05-26 12:58:03,475 - __main__ - INFO - Inputs reformatted as [True 0.1234 100.25 11.512925464970229 14.29 700 35654.0 5677 5677.0 0 0 1
+ 1.0 0.0 0.0 0.0 0.0 0.0 0.0]
+2024-05-26 12:58:03,475 - __main__ - INFO - Shape of reformamtted data is (1, 19)
+2024-05-26 12:58:03,554 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 12:58:03] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=700&days.with.cr.line=35654&revol.bal=5677&revol.util=34&inq.last.6mths=0&delinq.2yrs=0&pub.rec=1&purpose=all_other HTTP/1.1" 200 -
