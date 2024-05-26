@@ -88,3 +88,46 @@
  1.0 0.0 0.0 0.0 0.0 0.0 0.0]
 2024-05-26 12:58:03,475 - __main__ - INFO - Shape of reformamtted data is (1, 19)
 2024-05-26 12:58:03,554 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 12:58:03] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=700&days.with.cr.line=35654&revol.bal=5677&revol.util=34&inq.last.6mths=0&delinq.2yrs=0&pub.rec=1&purpose=all_other HTTP/1.1" 200 -
+2024-05-26 13:41:55,302 - __main__ - INFO - Starting Flask app
+2024-05-26 13:41:55,312 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-26 13:41:55,312 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-26 13:41:55,313 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 13:41:56,634 - __main__ - INFO - Starting Flask app
+2024-05-26 13:41:56,638 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 13:41:56,646 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 13:42:04,081 - __main__ - INFO - Input form rendered
+2024-05-26 13:42:04,088 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 13:42:04] "GET / HTTP/1.1" 200 -
+2024-05-26 13:42:32,541 - __main__ - INFO - Data route accessed with method GET
+2024-05-26 13:42:32,541 - __main__ - INFO - Received inputs as ImmutableMultiDict([('credit.policy', 'True'), ('int.rate', '0.1234'), ('installment', '100.25'), ('annual.inc', '100'), ('dti', '14.29'), ('fico', '760'), ('days.with.cr.line', '5677'), ('revol.bal', '678'), ('revol.util', '78'), ('inq.last.6mths', '8'), ('delinq.2yrs', '1'), ('pub.rec', '4'), ('purpose', 'small_business')])
+2024-05-26 13:42:32,541 - __main__ - INFO - Inputs reformatted as [True 0.1234 100.25 11.512925464970229 14.29 760 5677.0 678 678.0 8 1 4
+ 0.0 0.0 0.0 0.0 0.0 0.0 1.0]
+2024-05-26 13:42:32,542 - __main__ - INFO - Data reformatted and shape as expected
+2024-05-26 13:42:32,545 - __main__ - INFO - Input scaled
+2024-05-26 13:42:32,629 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 13:42:32] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=760&days.with.cr.line=5677&revol.bal=678&revol.util=78&inq.last.6mths=8&delinq.2yrs=1&pub.rec=4&purpose=small_business HTTP/1.1" 200 -
+2024-05-26 13:43:04,104 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-26 13:43:04,387 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 13:43:05,911 - __main__ - INFO - Starting Flask app
+2024-05-26 13:43:05,916 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 13:43:05,925 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 15:41:08,957 - __main__ - INFO - Starting Flask app
+2024-05-26 15:41:08,988 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-26 15:41:08,988 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-26 15:41:08,989 - werkzeug - INFO -  * Restarting with stat
+2024-05-26 15:41:11,580 - __main__ - INFO - Starting Flask app
+2024-05-26 15:41:11,588 - werkzeug - WARNING -  * Debugger is active!
+2024-05-26 15:41:11,605 - werkzeug - INFO -  * Debugger PIN: 119-554-067
+2024-05-26 15:41:27,763 - __main__ - INFO - Input form rendered
+2024-05-26 15:41:27,781 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 15:41:27] "GET / HTTP/1.1" 200 -
+2024-05-26 15:42:03,153 - __main__ - INFO - Data route accessed with method GET
+2024-05-26 15:42:03,154 - __main__ - INFO - Received inputs as ImmutableMultiDict([('credit.policy', 'False'), ('int.rate', '0.1234'), ('installment', '100.25'), ('annual.inc', '100'), ('dti', '14.29'), ('fico', '600'), ('days.with.cr.line', '6789'), ('revol.bal', '568'), ('revol.util', '56'), ('inq.last.6mths', '0'), ('delinq.2yrs', '0'), ('pub.rec', '0'), ('purpose', 'debt_consolidation')])
+2024-05-26 15:42:03,155 - __main__ - INFO - Inputs reformatted as [True 0.1234 100.25 11.512925464970229 14.29 600 6789.0 568 568.0 0 0 0
+ 1.0 0.0 1.0 0.0 0.0 0.0 0.0]
+2024-05-26 15:42:03,155 - __main__ - INFO - Data reformatted and shape as expected
+2024-05-26 15:42:03,156 - __main__ - INFO - scaler opened
+2024-05-26 15:42:03,161 - __main__ - INFO - Input scaled
+2024-05-26 15:42:03,241 - __main__ - INFO - Model file loaded
+2024-05-26 15:42:03,243 - __main__ - INFO - Prediction is [0]
+2024-05-26 15:42:03,243 - __main__ - INFO - Output message will be dispalyed
+2024-05-26 15:42:03,246 - werkzeug - INFO - 127.0.0.1 - - [26/May/2024 15:42:03] "GET /submit?credit.policy=False&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=600&days.with.cr.line=6789&revol.bal=568&revol.util=56&inq.last.6mths=0&delinq.2yrs=0&pub.rec=0&purpose=debt_consolidation HTTP/1.1" 200 -

@@ -64,24 +64,58 @@ def make_predictions():
     logger.info('Inputs reformatted as %s' , data)
     
     data = data.reshape(1,-1)
-    logger.info('Shape of reformamtted data is %s' , data.shape)
+    
+    try:
+        assert data.shape == (1, 19)
+        logger.info('Data reformatted and shape as expected')
+    except AssertionError as e:
+        logger.error('Data shape not as expected: %s' , data.shape)
+    
 
-    cwd = os.getcwd()
-    file_path = os.path.join(cwd,'xgb_gs_model.p')
-    xg_filepath = os.path.join(cwd,'best_xgbgs.json')
-    ss_filepath = os.path.join(cwd,'std_scaler.pkl')
-    with open('std_scaler.pkl', 'rb') as scaler_file:
-        scaler = pickle.load(scaler_file)
-    scaled_input = scaler.transform(data)        
+    
+    try:
+        cwd = os.getcwd()
+        file_path = os.path.join(cwd,'xgb_gs_model.p')
+        xg_filepath = os.path.join(cwd,'best_xgbgs.json')
+        ss_filepath = os.path.join(cwd,'std_scaler.pkl')
+        with open('std_scaler.pkl', 'rb') as scaler_file:
+            scaler = pickle.load(scaler_file)
+    except IOError as e:
+        logger.error('Could not loan std_scaler.pkl')
+    else:
+        logger.info('scaler opened')
+    
+    try:        
+        scaled_input = scaler.transform(data)
+    except:
+        logger.error('Could not scale input')
+    else:
+        logger.info('Input scaled')
+    
+    
     loaded_model = xgb.XGBClassifier()
-    loaded_model.load_model(xg_filepath)
-    prediction = loaded_model.predict(scaled_input)
+    
+    try:
+        loaded_model.load_model(xg_filepath)
+    except IOError as e:
+        logger.error('Could not load model file')
+    else:
+        logger.info('Model file loaded')
+    
+    try:
+        prediction = loaded_model.predict(scaled_input)
+    except:
+        logger.error('Could not predict ')
+    else:
+        logger.info('Prediction is %s', prediction)
+    
     if prediction:
         result = 'likely'
     else:
         result = 'unlikely'
 
     #return render_template("results.html", uri = round(prediction, 2))
+    logger.info('Output message will be dispalyed')
     return render_template("results.html", result = result)
 
 if __name__ == "__main__":
