@@ -5,15 +5,26 @@ import pandas as pd
 from flask import Flask, request, Response, render_template, jsonify
 import os
 import xgboost as xgb
+import logging
+
+# Configure the logger
+logging.basicConfig(
+    filename='flask_app.log',
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 app = Flask('myApp')
 
 @app.route('/')
 def home():
+    logger.info('Input form rendered')
     return render_template('form.html')
 
 @app.route("/submit")
 def make_predictions():
+    logger.info('Data route accessed with method %s', request.method)
     # load the form data from the incoming request
     user_input = request.args
     c_policy = np.array(bool(user_input['credit.policy']))
@@ -69,5 +80,6 @@ def make_predictions():
     return render_template("results.html", result = result)
 
 if __name__ == "__main__":
+    logger.info('Starting Flask app')
     app.run(debug=True)
     

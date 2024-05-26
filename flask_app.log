@@ -1,0 +1,56 @@
+2024-05-23 17:39:05,693 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-23 17:39:05,693 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-23 17:39:05,694 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:39:07,938 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:39:07,951 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:39:59,338 - __main__ - INFO - Input form submitted
+2024-05-23 17:39:59,346 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:39:59] "GET / HTTP/1.1" 200 -
+2024-05-23 17:40:49,955 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-23 17:40:50,162 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:40:51,979 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:40:51,991 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:41:07,123 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-23 17:41:07,123 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-23 17:41:07,124 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:41:08,260 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:41:08,267 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:41:15,645 - __main__ - INFO - Input form rendered
+2024-05-23 17:41:15,650 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:41:15] "GET / HTTP/1.1" 200 -
+2024-05-23 17:42:57,237 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-23 17:42:57,416 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:42:58,836 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:42:58,847 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:43:07,876 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-23 17:43:08,059 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:43:09,522 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:43:09,530 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:46:38,011 - __main__ - INFO - Starting Flask app
+2024-05-23 17:46:38,022 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-23 17:46:38,022 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-23 17:46:38,023 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:46:39,177 - __main__ - INFO - Starting Flask app
+2024-05-23 17:46:39,182 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:46:39,190 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:47:47,804 - __main__ - INFO - Input form rendered
+2024-05-23 17:47:47,811 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:47:47] "GET / HTTP/1.1" 200 -
+2024-05-23 17:48:08,016 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:48:08] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=750&days.with.cr.line=3&revol.bal=3456&revol.util=456&inq.last.6mths=567&delinq.2yrs=5&pub.rec=3&purpose=educational HTTP/1.1" 200 -
+2024-05-23 17:50:43,854 - werkzeug - INFO -  * Detected change in '/Users/dbvaddi/Desktop/MachineLearning_Coursera/Loans_LC/app.py', reloading
+2024-05-23 17:50:44,064 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:50:45,700 - __main__ - INFO - Starting Flask app
+2024-05-23 17:50:45,735 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:50:45,767 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:51:13,051 - __main__ - INFO - Starting Flask app
+2024-05-23 17:51:13,062 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-23 17:51:13,062 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-05-23 17:51:13,063 - werkzeug - INFO -  * Restarting with stat
+2024-05-23 17:51:14,276 - __main__ - INFO - Starting Flask app
+2024-05-23 17:51:14,283 - werkzeug - WARNING -  * Debugger is active!
+2024-05-23 17:51:14,293 - werkzeug - INFO -  * Debugger PIN: 600-408-461
+2024-05-23 17:51:26,332 - __main__ - INFO - Input form rendered
+2024-05-23 17:51:26,342 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:51:26] "GET / HTTP/1.1" 200 -
+2024-05-23 17:51:58,368 - __main__ - INFO - Data route accessed with method GET
+2024-05-23 17:51:58,436 - werkzeug - INFO - 127.0.0.1 - - [23/May/2024 17:51:58] "GET /submit?credit.policy=True&int.rate=0.1234&installment=100.25&annual.inc=100&dti=14.29&fico=650&days.with.cr.line=567899&revol.bal=5681&revol.util=15&inq.last.6mths=2&delinq.2yrs=0&pub.rec=0&purpose=small_business HTTP/1.1" 200 -
